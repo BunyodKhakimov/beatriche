@@ -41,6 +41,7 @@ class UserCrudController extends CrudController
     {
         CRUD::column('name');
         CRUD::column('email');
+        CRUD::column('phone');
         CRUD::column('role');
         CRUD::column('skills')->type('relationship_count');
         CRUD::column('orders')->type('relationship_count');
@@ -63,7 +64,13 @@ class UserCrudController extends CrudController
     {
         CRUD::setValidation(UserRequest::class);
 
-        CRUD::setFromDb(); // fields
+//        CRUD::setFromDb(); // fields
+        CRUD::field('name')->type('text');
+        CRUD::field('email')->type('email');
+        CRUD::field('password')->type('password');
+        CRUD::field('info')->type('text');
+        CRUD::field('phone')->type('number')->prefix('+ 998');
+        CRUD::field('role')->type('number');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
