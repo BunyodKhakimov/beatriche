@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 // --------------------------
 // Custom Backpack Routes
 // --------------------------
@@ -14,4 +16,9 @@ Route::group([
     ),
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
+    Route::crud('service', 'ServiceCrudController');
+    Route::crud('order', 'OrderCrudController');
+    Route::crud('review', 'ReviewCrudController');
+    Route::crud('skill', 'SkillCrudController');
+    Route::crud('user', 'UserCrudController');
 }); // this should be the absolute last line of this file
