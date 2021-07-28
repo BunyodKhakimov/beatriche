@@ -26,7 +26,12 @@ class UserRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'name'      => 'required|string|min:5|max:255',
+            'email'     => 'required|email',
+            'password'  => 'required|min:8|max:16',
+            'info'      => 'required|string|min:5|max:255',
+            'phone'     => ['required', 'regex:/^(90|91|93|94|97|98|99|33)([0-9]{7})$/'],
+            'role'      => 'required|integer|min:0|max:3',
         ];
     }
 
@@ -38,7 +43,12 @@ class UserRequest extends FormRequest
     public function attributes()
     {
         return [
-            //
+            'name',
+            'email',
+            'password',
+            'info',
+            'phone',
+            'role',
         ];
     }
 

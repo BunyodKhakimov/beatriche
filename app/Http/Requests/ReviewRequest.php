@@ -26,7 +26,9 @@ class ReviewRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'name'      => 'required|min:5|max:255',
+            'body'      => 'required|min:5|max:255',
+            'phone'     => ['required', 'regex:/^(90|91|93|94|97|98|99|33)([0-9]{7})$/'],
         ];
     }
 
@@ -38,7 +40,9 @@ class ReviewRequest extends FormRequest
     public function attributes()
     {
         return [
-            //
+            'name',
+            'body',
+            'phone',
         ];
     }
 

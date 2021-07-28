@@ -26,7 +26,11 @@ class ImageRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'user_id'   => 'required|integer|exists:users,id',
+            'title'     => 'required|string|min:5|max:255',
+            'path'      => 'required|string|min:5|max:255',
+            'size'      => 'required|string|min:5|max:255',
+            'image'     => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ];
     }
 
@@ -38,7 +42,11 @@ class ImageRequest extends FormRequest
     public function attributes()
     {
         return [
-            //
+            'user_id',
+            'title',
+            'path',
+            'size',
+            'image',
         ];
     }
 

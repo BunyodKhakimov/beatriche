@@ -26,7 +26,9 @@ class ServiceRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'user_id'   => 'required|integer|exists:users,id',
+            'title'     => 'required|string|min:5|max:255',
+            'price'     => 'required|integer|min:0',
         ];
     }
 
@@ -38,7 +40,9 @@ class ServiceRequest extends FormRequest
     public function attributes()
     {
         return [
-            //
+            'user_id',
+            'title',
+            'price',
         ];
     }
 

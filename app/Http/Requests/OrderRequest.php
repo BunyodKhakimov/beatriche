@@ -26,7 +26,10 @@ class OrderRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'user_id'       => 'required|integer|exists:users,id',
+            'service_id'    => 'required|integer|exists:services,id',
+            'name'          => 'required|string|min:5|max:255',
+            'phone'         => ['required', 'regex:/^(90|91|93|94|97|98|99|33)([0-9]{7})$/'],
         ];
     }
 
@@ -38,7 +41,10 @@ class OrderRequest extends FormRequest
     public function attributes()
     {
         return [
-            //
+            'user_id',
+            'service_id',
+            'name',
+            'phone',
         ];
     }
 
