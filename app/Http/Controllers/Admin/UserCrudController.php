@@ -79,6 +79,14 @@ class UserCrudController extends CrudController
             'upload' => true,
         ], 'both');
 
+        CRUD::addField([
+                'name'      => 'profile_image',
+                'label'     => 'Profile Image',
+                'type'      => 'upload',
+                'upload'    => true,
+            ],
+        );
+
         /**
          * Fields can be defined using the fluent syntax or array syntax:
          * - CRUD::field('price')->type('number');

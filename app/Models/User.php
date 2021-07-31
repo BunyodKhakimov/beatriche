@@ -24,7 +24,7 @@ class User extends Authenticatable
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
-    protected $fillable = ['name', 'email', 'password', 'info', 'phone', 'role', 'image',];
+    protected $fillable = ['name', 'email', 'password', 'info', 'phone', 'role', 'image', 'profile_image',];
     protected $hidden = ['password', 'remember_token',];
     protected $casts = ['email_verified_at' => 'datetime', 'image' => 'array',];
     // protected $dates = [];
@@ -65,6 +65,15 @@ class User extends Authenticatable
             }
         }
         $this->attributes[$attribute_name] = json_encode($attribute_value);
+    }
+
+    public function setProfileImageAttribute($value)
+    {
+        $attribute_name = "profile_image";
+        $disk = 's3';
+        $destination_path = 'profile';
+
+        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
     }
 
     /*
