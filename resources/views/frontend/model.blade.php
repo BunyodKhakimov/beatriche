@@ -55,65 +55,74 @@
                             <div style="clear: both;"></div>
 
                             <div class="grid models text-center">
-                                <div class="grid-item model-item transition metal ium">
-                                    <img alt="" src="{{asset('/images/model/1.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+                                @if(isset($users))
+                                    @foreach($users as $user)
+{{--                                        {{dd($user)}}--}}
+                                        <div class="grid-item model-item transition metal ium">
+                                            <img alt="" src="@if(isset($user->profile_image)){{Storage::disk('s3')->temporaryUrl($user->profile_image, '+2 minutes')}}@else{{asset('/images/model/3.jpg')}}@endif">
+                                            <a href="{{route('model-details', $user->id)}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
+                                        </div><!-- End off grid item -->
+                                    @endforeach
+                                @endif
+{{--                                <div class="grid-item model-item transition metal ium">--}}
+{{--                                    <img alt="" src="{{asset('/images/model/1.jpg')}}">--}}
+{{--                                    <a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item metalloid " >
-                                    <img alt="" src="{{asset('/images/model/2.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item metalloid " >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/2.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item post-transition metal">
-                                    <img alt="" src="{{asset('/images/model/3.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item post-transition metal">--}}
+{{--                                    <img alt="" src="{{asset('/images/model/3.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item post-transition metal ium" >
-                                    <img alt="" src="{{asset('/images/model/4.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item post-transition metal ium" >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/4.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item metal ar" >
-                                    <img alt="" src="{{asset('/images/model/5.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item metal ar" >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/5.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item alkali ar" >
-                                    <img alt="" src="{{asset('/images/model/6.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item alkali ar" >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/6.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item alkali ar" >
-                                    <img alt="" src="{{asset('/images/model/7.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item alkali ar" >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/7.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item alkali ar" >
-                                    <img alt="" src="{{asset('/images/model/8.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item alkali ar" >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/8.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item alkali ar" >
-                                    <img alt="" src="{{asset('/images/model/9.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item alkali ar" >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/9.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item alkali ar" >
-                                    <img alt="" src="{{asset('/images/model/10.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item alkali ar" >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/10.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item alkali ar" >
-                                    <img alt="" src="{{asset('/images/model/11.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item alkali ar" >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/11.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
 
-                                <div class="grid-item model-item alkali ar" >
-                                    <img alt="" src="{{asset('/images/model/12.jpg')}}">
-									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
-                                </div><!-- End off grid item -->
+{{--                                <div class="grid-item model-item alkali ar" >--}}
+{{--                                    <img alt="" src="{{asset('/images/model/12.jpg')}}">--}}
+{{--									<a href="{{route('model-details')}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                                </div><!-- End off grid item -->--}}
                             </div>
 
                             <div style="clear: both;"></div>
@@ -215,9 +224,6 @@
                                         </div>
                                     </div><!-- End off grid Hover area -->
                                 </div><!-- End off grid item -->
-
-
-
                             </div>
 
                             <div style="clear: both;"></div>

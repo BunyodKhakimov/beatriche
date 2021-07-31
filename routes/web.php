@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\ModelController;
 use App\Http\Controllers\FrontPagesController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontPagesController::class, 'index'])->name('home');
 Route::get('/about', [FrontPagesController::class, 'about'])->name('about');
-Route::get('/models', [FrontPagesController::class, 'models'])->name('models');
-Route::get('/model-details', [FrontPagesController::class, 'modelDetails'])->name('model-details');
+Route::get('/models', [ModelController::class, 'index'])->name('models');
+Route::get('/model-details/{user}', [ModelController::class, 'show'])->name('model-details');
 Route::get('/blog', [FrontPagesController::class, 'blog'])->name('blog');
 Route::get('/blog-details', [FrontPagesController::class, 'blogDetails'])->name('blog-details');
 Route::get('/service', [FrontPagesController::class, 'service'])->name('service');

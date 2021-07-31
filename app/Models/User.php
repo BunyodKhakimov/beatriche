@@ -67,15 +67,6 @@ class User extends Authenticatable
         $this->attributes[$attribute_name] = json_encode($attribute_value);
     }
 
-    public function setProfileImageAttribute($value)
-    {
-        $attribute_name = "profile_image";
-        $disk = 's3';
-        $destination_path = 'profile';
-
-        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
-    }
-
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
@@ -121,7 +112,6 @@ class User extends Authenticatable
         $this->attributes['password'] = bcrypt($value);
     }
 
-
     public function setImageAttribute($value)
     {
         $attribute_name = "image";
@@ -129,6 +119,15 @@ class User extends Authenticatable
         $destination_path = "images";
 
         $this->uploadMultipleFilesToDisk($value, $attribute_name, $disk, $destination_path);
+    }
+
+    public function setProfileImageAttribute($value)
+    {
+        $attribute_name = "profile_image";
+        $disk = 's3';
+        $destination_path = 'profile';
+
+        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
     }
 
 }

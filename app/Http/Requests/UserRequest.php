@@ -51,6 +51,7 @@ class UserRequest extends FormRequest
             'info',
             'phone',
             'role',
+            'image',
         ];
     }
 
