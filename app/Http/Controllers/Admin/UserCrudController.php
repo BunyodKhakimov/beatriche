@@ -67,10 +67,17 @@ class UserCrudController extends CrudController
 //        CRUD::setFromDb(); // fields
         CRUD::field('name')->type('text');
         CRUD::field('email')->type('email');
-        CRUD::field('password')->type('password');
-        CRUD::field('info')->type('text');
+        CRUD::field('password')->type('hidden')->fake(true);
+        CRUD::field('info')->type('textarea');
         CRUD::field('phone')->type('number')->prefix('+ 998');
         CRUD::field('role')->type('number');
+
+        CRUD::addField([
+            'name' => 'image',
+            'label' => 'Images',
+            'type' => 'upload_multiple',
+            'upload' => true,
+        ], 'both');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
