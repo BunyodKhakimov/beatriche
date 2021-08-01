@@ -67,7 +67,7 @@ class UserCrudController extends CrudController
 //        CRUD::setFromDb(); // fields
         CRUD::field('name')->type('text');
         CRUD::field('email')->type('email');
-        CRUD::field('password')->type('hidden')->fake(true);
+        CRUD::field('password')->type('password')->type('hidden');
         CRUD::field('info')->type('textarea');
         CRUD::field('phone')->type('number')->prefix('+ 998');
         CRUD::field('role')->type('number');
