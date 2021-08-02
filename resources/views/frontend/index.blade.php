@@ -126,7 +126,106 @@
         <br />
         <br />
         <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+    </section> <!--End off About section -->
 
+    <!--Our Work Section-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="main_work">
+
+                    <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
+                        <div class="work_item">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12 col-xs-12 text-right pull-right sm-text-center">
+                                    <div class="work_item_img">
+                                        <img src="{{asset('/images/work-img1.jpg')}}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 col-xs-12 text-right pull-left sm-text-center">
+                                    <div class="work_item_details m-top-80 sm-m-top-20">
+                                        <h4>Fashionista</h4>
+                                        <div class="work_separator1"></div>
+                                        <p class="m-top-40">Duis autem vel eum iriure dolor in hendrerit in vulputate velit molestie consequat</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End off work-item -->
+
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="work_item">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12 col-xs-12">
+                                    <div class="work_item_img sm-text-center sm-m-top-40">
+                                        <img src="{{asset('/images/work-img2.jpg')}}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
+                                    <div class="work_item_details m-top-80 sm-m-top-20">
+                                        <h4>Fashionista</h4>
+                                        <div class="work_separator2"></div>
+                                        <p class="m-top-40">Duis autem vel eum iriure dolor in hendrerit in vulputate velit molestie consequat</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- End off work-item -->
+
+                    <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
+                        <div class="work_item">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12 col-xs-12 text-right pull-right sm-text-center">
+                                    <div class="work_item_img sm-m-top-40">
+                                        <img src="{{asset('/images/work-img3.jpg')}}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 col-xs-12 text-right pull-left sm-text-center">
+                                    <div class="work_item_details m-top-80 sm-m-top-20">
+                                        <h4>Fashionista</h4>
+                                        <div class="work_separator1"></div>
+                                        <p class="m-top-40">Duis autem vel eum iriure dolor in hendrerit in vulputate velit molestie consequat</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End off work-item -->
+
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="work_item">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12 col-xs-12">
+                                    <div class="work_item_img sm-text-center sm-m-top-40">
+                                        <img src="{{asset('/images/work-img4.jpg')}}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
+                                    <div class="work_item_details m-top-80 sm-m-top-20">
+                                        <h4>Fashionista</h4>
+                                        <div class="work_separator2"></div>
+                                        <p class="m-top-40">Duis autem vel eum iriure dolor in hendrerit in vulputate velit molestie consequat</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- End off work-item -->
+
+                </div>
+            </div>
+        </div>
+    </section> <!--End off Work section -->
+
+    <br />
+    <br />
+    <hr />
+
+{{--    <section>--}}
 {{--        <div class="container">--}}
 {{--            <div class="row">--}}
 
@@ -297,67 +396,64 @@
 {{--                </div>--}}
 {{--            </div> <!--End off row -->--}}
 {{--        </div>--}}
-{{--        <hr />--}}
-{{--        <br />--}}
+{{--    </section>--}}
 
-    </section> <!--End off About section -->
+{{--    <!--Models section-->--}}
+{{--    <section id="models" class="models bg-grey roomy-80">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="main_models text-center">--}}
+{{--                    <div class="col-md-12">--}}
+{{--                        <div class="head_title text-left sm-text-center wow fadeInDown">--}}
+{{--                            <h2>Our Models</h2>--}}
+{{--                            <h5><em>The success of Beatriche is passion and love. Meet them now!</em></h5>--}}
+{{--                            <div class="separator_left"></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-    <!--Models section-->
-    <section id="models" class="models bg-grey roomy-80">
-        <div class="container">
-            <div class="row">
-                <div class="main_models text-center">
-                    <div class="col-md-12">
-                        <div class="head_title text-left sm-text-center wow fadeInDown">
-                            <h2>Our Models</h2>
-                            <h5><em>The success of Beatriche is passion and love. Meet them now!</em></h5>
-                            <div class="separator_left"></div>
-                        </div>
-                    </div>
+{{--                    <div class="col-md-3 col-sm-6">--}}
+{{--                        <div class="model_item m-top-30">--}}
+{{--                            <div class="model_img">--}}
+{{--                                <img src="{{asset('/images/model-img04.jpg')}}" alt="" />--}}
+{{--                                <div class="model_caption">--}}
+{{--                                    <h5 class="text-white">Angela Baby</h5>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div><!-- End off col-md-3 -->--}}
 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="model_item m-top-30">
-                            <div class="model_img">
-                                <img src="{{asset('/images/model-img04.jpg')}}" alt="" />
-                                <div class="model_caption">
-                                    <h5 class="text-white">Angela Baby</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End off col-md-3 -->
+{{--                    <div class="col-md-3 col-sm-6">--}}
+{{--                        <div class="model_item m-top-30">--}}
+{{--                            <div class="model_img">--}}
+{{--                                <img src="{{asset('/images/model-img05.jpg')}}" alt="" />--}}
+{{--                                <div class="model_caption">--}}
+{{--                                    <h5 class="text-white">Angela Baby</h5>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div><!-- End off col-md-3 -->--}}
 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="model_item m-top-30">
-                            <div class="model_img">
-                                <img src="{{asset('/images/model-img05.jpg')}}" alt="" />
-                                <div class="model_caption">
-                                    <h5 class="text-white">Angela Baby</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End off col-md-3 -->
+{{--                    <div class="col-md-3 col-sm-6">--}}
+{{--                        <div class="model_item m-top-30">--}}
+{{--                            <div class="model_img">--}}
+{{--                                <img src="{{asset('/images/model-img07.jpg')}}" alt="" />--}}
+{{--                                <div class="model_caption">--}}
+{{--                                    <h5 class="text-white">Angela Baby</h5>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div><!-- End off col-md-3 -->--}}
 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="model_item m-top-30">
-                            <div class="model_img">
-                                <img src="{{asset('/images/model-img07.jpg')}}" alt="" />
-                                <div class="model_caption">
-                                    <h5 class="text-white">Angela Baby</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End off col-md-3 -->
+{{--                    <div class="col-md-3 col-sm-6">--}}
+{{--                        <div class="model_item meet_team m-top-30">--}}
+{{--                            <a href="{{route('models')}}">Meet All Them <i class="fa fa-long-arrow-right"></i></a>--}}
+{{--                        </div>--}}
+{{--                    </div><!-- End off col-md-3 -->--}}
 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="model_item meet_team m-top-30">
-                            <a href="{{route('models')}}">Meet All Them <i class="fa fa-long-arrow-right"></i></a>
-                        </div>
-                    </div><!-- End off col-md-3 -->
-
-                </div>
-            </div>
-        </div>
-    </section>
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
 
     <!--Contact Us Section-->
