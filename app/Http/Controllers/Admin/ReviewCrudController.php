@@ -64,7 +64,7 @@ class ReviewCrudController extends CrudController
 //        CRUD::setFromDb(); // fields
         CRUD::field('name')->type('text');
         CRUD::field('phone')->type('number')->prefix('+ 998');
-        CRUD::field('body')->type('text');
+        CRUD::field('body')->type('textarea');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

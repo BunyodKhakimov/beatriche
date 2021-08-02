@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\OrderRequest;
+use App\Http\Requests\ReviewRequest;
 use App\Models\Order;
+use App\Models\Review;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
 class FrontPagesController extends Controller
@@ -15,7 +18,9 @@ class FrontPagesController extends Controller
 
     public function about()
     {
-        return view('frontend.about');
+        $reviews = Review::select()->orderBy('id', 'desc')->limit(3)->get();
+//        dd($reviews);
+        return view('frontend.about')->with('reviews', $reviews);
     }
 
     public function models()
@@ -56,6 +61,17 @@ class FrontPagesController extends Controller
         $order->phone = (integer)$request->phone;
         $order->user_id = (integer)$request->user_id;
         $order->save();
+
+        return redirect()->back();
+    }
+
+    public function reviewStore(ReviewRequest $request)
+    {
+        $review = new Review();
+        $review->name = $request->name;
+        $review->body = $request->body;
+        $review->phone = (integer)$request->phone;
+        $review->save();
 
         return redirect()->back();
     }

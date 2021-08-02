@@ -25,3 +25,4 @@ Route::get('/service', [FrontPagesController::class, 'service'])->name('service'
 Route::get('/contact', [FrontPagesController::class, 'contact'])->name('contact');
 
 Route::post('/order', [FrontPagesController::class, 'orderStore'])->name('public.order.store');
+Route::post('/review', [FrontPagesController::class, 'reviewStore'])->name('public.review.store');
