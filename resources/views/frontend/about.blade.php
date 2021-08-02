@@ -183,6 +183,7 @@
                 </div>
             </section>
 
+            <hr />
 
             <!--Testimonial Section-->
             <section id="testimonial" class="testimonial fix roomy-100">
