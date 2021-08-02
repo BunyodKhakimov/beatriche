@@ -168,29 +168,29 @@
                                         </div><!-- End off grid item -->
                                     @endforeach
                                 @endif
-{{--                                <div class="grid-item">--}}
-{{--                                    <img alt="" src="{{asset('/images/porfolio-1.jpg')}}">--}}
-{{--                                </div><!-- End off grid item -->--}}
+                                <div class="grid-item">
+                                    <img alt="" src="{{asset('/images/porfolio-1.jpg')}}">
+                                </div><!-- End off grid item -->
 
-{{--                                <div class="grid-item" >--}}
-{{--                                    <img alt="" src="{{asset('/images/porfolio-2.jpg')}}">--}}
-{{--                                </div><!-- End off grid item -->--}}
+                                <div class="grid-item" >
+                                    <img alt="" src="{{asset('/images/porfolio-2.jpg')}}">
+                                </div><!-- End off grid item -->
 
-{{--                                <div class="grid-item ">--}}
-{{--                                    <img alt="" src="{{asset('/images/porfolio-3.jpg')}}">--}}
-{{--                                </div><!-- End off grid item -->--}}
+                                <div class="grid-item ">
+                                    <img alt="" src="{{asset('/images/porfolio-3.jpg')}}">
+                                </div><!-- End off grid item -->
 
-{{--                                <div class="grid-item " >--}}
-{{--                                    <img alt="" src="{{asset('/images/porfolio-4.jpg')}}">--}}
-{{--                                </div><!-- End off grid item -->--}}
+                                <div class="grid-item " >
+                                    <img alt="" src="{{asset('/images/porfolio-4.jpg')}}">
+                                </div><!-- End off grid item -->
 
-{{--                                <div class="grid-item" >--}}
-{{--                                    <img alt="" src="{{asset('/images/porfolio-5.jpg')}}">--}}
-{{--                                </div><!-- End off grid item -->--}}
+                                <div class="grid-item" >
+                                    <img alt="" src="{{asset('/images/porfolio-5.jpg')}}">
+                                </div><!-- End off grid item -->
 
-{{--                                <div class="grid-item " >--}}
-{{--                                    <img alt="" src="{{asset('/images/porfolio-6.jpg')}}">--}}
-{{--                                </div><!-- End off grid item -->--}}
+                                <div class="grid-item " >
+                                    <img alt="" src="{{asset('/images/porfolio-6.jpg')}}">
+                                </div><!-- End off grid item -->
                             </div>
 
                             <div style="clear: both;"></div>

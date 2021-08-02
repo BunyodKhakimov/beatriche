@@ -24,7 +24,7 @@ class User extends Authenticatable
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
-    protected $fillable = ['name', 'email', 'password', 'info', 'phone', 'role', 'image', 'profile_image',];
+    protected $fillable = ['name', 'email', 'password', 'info', 'phone', 'image', 'profile_image',];
     protected $hidden = ['password', 'remember_token',];
     protected $casts = ['email_verified_at' => 'datetime', 'image' => 'array',];
     // protected $dates = [];
@@ -85,8 +85,8 @@ class User extends Authenticatable
         return $this->hasMany(Service::class);
     }
 
-    public function images() {
-        return $this->hasMany(Image::class)->latest();
+    public function roles() {
+        return $this->belongsToMany(Role::class, 'role_user');
     }
 
     /*
