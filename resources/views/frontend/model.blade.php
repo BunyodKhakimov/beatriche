@@ -59,8 +59,8 @@
                                     @foreach($users as $user)
 {{--                                        {{dd($user)}}--}}
                                         <div class="grid-item model-item transition metal ium">
-                                            <img alt="" src="@if(isset($user->profile_image)){{Storage::disk('s3')->temporaryUrl($user->profile_image, '+2 minutes')}}@else{{asset('/images/model/3.jpg')}}@endif">
-                                            <a href="{{route('model-details', $user->id)}}" class="btn btn-default m-top-20">View Details<i class="fa fa-long-arrow-right"></i></a>
+                                            <img alt="" src="@if(isset($user->profile_image)){{Storage::disk('s3')->temporaryUrl($user->profile_image, '+2 minutes')}}@else{{asset('/images/model/default.jpg')}}@endif">
+                                            <a href="{{route('model-details', $user->id)}}" class="btn btn-default m-top-20">View {{$user->name}} <i class="fa fa-long-arrow-right"></i></a>
                                         </div><!-- End off grid item -->
                                     @endforeach
                                 @endif

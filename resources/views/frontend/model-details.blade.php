@@ -38,7 +38,7 @@
                         <div class="main_details">
                             <div class="col-md-6">
                                 <div class="m_details_img">
-                                    <img src="@if(isset($user)){{ Storage::disk('s3')->temporaryUrl($user->profile_image, '+2 minutes') }}@endif" alt="" />
+                                    <img src="@if(isset($user->profile_image)){{ Storage::disk('s3')->temporaryUrl($user->profile_image, '+2 minutes') }}@else{{asset('/images/model/default.jpg')}}@endif" alt="" />
 {{--                                    <img src="{{asset('/images/angela-img.jpg')}}" alt="" />--}}
                                 </div>
                             </div>
@@ -101,7 +101,7 @@
                             <div class="col-md-12">
                                 <div class="skill_bar m-top-70">
                                     <div class="row">
-                                        @if(isset($user))
+                                        @if(isset($user->skills))
                                             <div class="col-md-6">
                                             @foreach($user->skills as $skill)
                                                 <div class="teamskillbar clearfix m-top-50" data-percent="{{$skill->value}}%">
@@ -161,36 +161,37 @@
                             <div style="clear: both;"></div>
 
                             <div class="grid text-center">
-                                @if(isset($user))
+                                @if(isset($user->image))
                                     @foreach($user->image as $img)
                                         <div class="grid-item transition">
                                             <img alt="" src="{{ Storage::disk('s3')->temporaryUrl($img, '+2 minutes') }}">
                                         </div><!-- End off grid item -->
                                     @endforeach
+                                @else
+                                    <div class="grid-item">
+                                        <img alt="" src="{{asset('/images/porfolio-1.jpg')}}">
+                                    </div><!-- End off grid item -->
+
+                                    <div class="grid-item" >
+                                        <img alt="" src="{{asset('/images/porfolio-2.jpg')}}">
+                                    </div><!-- End off grid item -->
+
+                                    <div class="grid-item ">
+                                        <img alt="" src="{{asset('/images/porfolio-3.jpg')}}">
+                                    </div><!-- End off grid item -->
+
+                                    <div class="grid-item " >
+                                        <img alt="" src="{{asset('/images/porfolio-4.jpg')}}">
+                                    </div><!-- End off grid item -->
+
+                                    <div class="grid-item" >
+                                        <img alt="" src="{{asset('/images/porfolio-5.jpg')}}">
+                                    </div><!-- End off grid item -->
+
+                                    <div class="grid-item " >
+                                        <img alt="" src="{{asset('/images/porfolio-6.jpg')}}">
+                                    </div><!-- End off grid item -->
                                 @endif
-                                <div class="grid-item">
-                                    <img alt="" src="{{asset('/images/porfolio-1.jpg')}}">
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item" >
-                                    <img alt="" src="{{asset('/images/porfolio-2.jpg')}}">
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item ">
-                                    <img alt="" src="{{asset('/images/porfolio-3.jpg')}}">
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item " >
-                                    <img alt="" src="{{asset('/images/porfolio-4.jpg')}}">
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item" >
-                                    <img alt="" src="{{asset('/images/porfolio-5.jpg')}}">
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item " >
-                                    <img alt="" src="{{asset('/images/porfolio-6.jpg')}}">
-                                </div><!-- End off grid item -->
                             </div>
 
                             <div style="clear: both;"></div>
