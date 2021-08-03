@@ -6,6 +6,8 @@ use App\Http\Requests\OrderRequest;
 use App\Http\Requests\ReviewRequest;
 use App\Models\Order;
 use App\Models\Review;
+use App\Models\Service;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
@@ -13,7 +15,12 @@ class FrontPagesController extends Controller
 {
     public function index()
     {
-        return view('frontend.index');
+        $masters = User::whereHas(
+            'roles', function($q){
+            $q->where('name', 'master');
+        })->get();
+        $services = Service::all();
+        return view('frontend.index')->with('masters', $masters)->with('services', $services);
     }
 
     public function about()

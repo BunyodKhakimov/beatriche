@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="main_feature">
 
-                    <div class="col-md-6 m-top-120">
+                    <div class="col-md-6 sm-m-top-10 m-top-120 ">
                         <!-- Head Title -->
                         <div class="head_title">
                             <h2>From Ocean</h2>
@@ -42,7 +42,7 @@
                             <div class="separator_left"></div>
                         </div><!-- End off Head Title -->
 
-                        <div class="feature_content wow fadeIn m-top-40">
+                        <div class="feature_content wow fadeIn sm-m-top-10 m-top-40">
                             <p>Eusus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores
                                 legere me lius quod ii legunt saepius. Duis autem vel eum iriure dolor in hendrerit vulputate
                                 velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
@@ -65,7 +65,7 @@
 {{--                            </p>--}}
 
                             <div class="feature_btns m-top-30">
-                                <a href="" class="btn btn-default text-uppercase">Забронировать <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="#order" class="btn btn-default text-uppercase">Забронировать <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -123,14 +123,16 @@
             </div><!--End off row-->
         </div><!--End off container -->
 
-        <br />
-        <br />
-        <br />
-        <hr />
-        <br />
-        <br />
-        <br />
     </section> <!--End off About section -->
+
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
 
     <!--Our Work Section-->
     <section>
@@ -222,8 +224,6 @@
     </section> <!--End off Work section -->
 
     <br />
-    <br />
-    <hr />
 
 {{--    <section>--}}
 {{--        <div class="container">--}}
@@ -398,66 +398,66 @@
 {{--        </div>--}}
 {{--    </section>--}}
 
-{{--    <!--Models section-->--}}
-{{--    <section id="models" class="models bg-grey roomy-80">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-{{--                <div class="main_models text-center">--}}
-{{--                    <div class="col-md-12">--}}
-{{--                        <div class="head_title text-left sm-text-center wow fadeInDown">--}}
-{{--                            <h2>Our Models</h2>--}}
-{{--                            <h5><em>The success of Beatriche is passion and love. Meet them now!</em></h5>--}}
-{{--                            <div class="separator_left"></div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
+    <!--Models section-->
+    <section id="models" class="models bg-grey roomy-80">
+        <div class="container">
+            <div class="row">
+                <div class="main_models text-center">
+                    <div class="col-md-12">
+                        <div class="head_title text-left sm-text-center wow fadeInDown">
+                            <h2>Our Models</h2>
+                            <h5><em>The success of Beatriche is passion and love. Meet them now!</em></h5>
+                            <div class="separator_left"></div>
+                        </div>
+                    </div>
 
-{{--                    <div class="col-md-3 col-sm-6">--}}
-{{--                        <div class="model_item m-top-30">--}}
-{{--                            <div class="model_img">--}}
-{{--                                <img src="{{asset('/images/model-img04.jpg')}}" alt="" />--}}
-{{--                                <div class="model_caption">--}}
-{{--                                    <h5 class="text-white">Angela Baby</h5>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div><!-- End off col-md-3 -->--}}
+                    <div class="col-md-3 col-sm-6">
+                        <div class="model_item m-top-30">
+                            <div class="model_img">
+                                <img src="{{asset('/images/model-img04.jpg')}}" alt="" />
+                                <div class="model_caption">
+                                    <h5 class="text-white">Angela Baby</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End off col-md-3 -->
 
-{{--                    <div class="col-md-3 col-sm-6">--}}
-{{--                        <div class="model_item m-top-30">--}}
-{{--                            <div class="model_img">--}}
-{{--                                <img src="{{asset('/images/model-img05.jpg')}}" alt="" />--}}
-{{--                                <div class="model_caption">--}}
-{{--                                    <h5 class="text-white">Angela Baby</h5>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div><!-- End off col-md-3 -->--}}
+                    <div class="col-md-3 col-sm-6">
+                        <div class="model_item m-top-30">
+                            <div class="model_img">
+                                <img src="{{asset('/images/model-img05.jpg')}}" alt="" />
+                                <div class="model_caption">
+                                    <h5 class="text-white">Angela Baby</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End off col-md-3 -->
 
-{{--                    <div class="col-md-3 col-sm-6">--}}
-{{--                        <div class="model_item m-top-30">--}}
-{{--                            <div class="model_img">--}}
-{{--                                <img src="{{asset('/images/model-img07.jpg')}}" alt="" />--}}
-{{--                                <div class="model_caption">--}}
-{{--                                    <h5 class="text-white">Angela Baby</h5>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div><!-- End off col-md-3 -->--}}
+                    <div class="col-md-3 col-sm-6">
+                        <div class="model_item m-top-30">
+                            <div class="model_img">
+                                <img src="{{asset('/images/model-img07.jpg')}}" alt="" />
+                                <div class="model_caption">
+                                    <h5 class="text-white">Angela Baby</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End off col-md-3 -->
 
-{{--                    <div class="col-md-3 col-sm-6">--}}
-{{--                        <div class="model_item meet_team m-top-30">--}}
-{{--                            <a href="{{route('models')}}">Meet All Them <i class="fa fa-long-arrow-right"></i></a>--}}
-{{--                        </div>--}}
-{{--                    </div><!-- End off col-md-3 -->--}}
+                    <div class="col-md-3 col-sm-6">
+                        <div class="model_item meet_team m-top-30">
+                            <a href="{{route('models')}}">Meet All Them <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div><!-- End off col-md-3 -->
 
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!--Contact Us Section-->
-    <section id="contact" class="contact fix">
+    <section id="order" class="contact fix">
         <div class="container">
             <div class="row">
                 <div class="main_contact p-top-100">
@@ -469,7 +469,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 sm-m-top-30">
+                    <div class="col-md-6 sm-m-top-10">
                         <form class="" action="{{route('public.order.store')}}" method="post">
                             <div class="row">
                                 @csrf
@@ -487,40 +487,55 @@
                                         <label for="phone" @error('phone') style="color: red" @enderror>
                                             Your Phone * @error('phone') ( {{ $message }} ) @enderror
                                         </label>
-                                        <input id="phone" name="phone" type="text" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="service" @error('service_id') style="color: red" @enderror>
-                                            Service ID * @error('service_id') ( {{ $message }} )@enderror
-                                        </label>
-                                        <input id="service" name="service_id" type="number" class="form-control" required="">
+                                        <input id="phone" name="phone" type="tel" prefix="ov:+998" class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="user_id" @error('user_id') style="color: red" @enderror>
-                                            Master ID * @error('user_id')( {{ $message }} )@enderror
+                                            Master * @error('user_id')( {{ $message }} )@enderror
                                         </label>
-                                        <input id="user_id" name="user_id" type="number" class="form-control">
+                                        <select name="user_id" class="form-control form-select">
+                                            @if(isset($masters))
+                                                <option selected>Choose master</option>
+                                                @foreach($masters as $master)
+                                                    <option value="{{$master->id}}">{{$master->name}}</option>
+                                                @endforeach
+                                            @endif
+                                        </select>
+{{--                                        <input id="user_id" name="user_id" type="number" class="form-control">--}}
                                     </div>
                                 </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="service_id" @error('service_id') style="color: red" @enderror>
+                                            Service * @error('service_id') ( {{ $message }} )@enderror
+                                        </label>
+                                        <select name="service_id" class="form-control form-select">
+                                            <option selected>Choose service</option>
+                                            @if(isset($services))
+                                                @foreach($services as $service)
+                                                    <option value="{{$service->id}}">{{$service->title}}</option>
+                                                @endforeach
+                                            @endif
+                                        </select>
+                                        {{--                                        <input id="service" name="service_id" type="number" class="form-control" required="">--}}
+                                    </div>
+                                </div>
+
                                 <div class="col-sm-12">
 {{--                                    <div class="form-group">--}}
 {{--                                        <label>Your Message *</label>--}}
 {{--                                        <textarea class="form-control" rows="6"></textarea>--}}
 {{--                                    </div>--}}
-                                    <div class="form-group">
+                                    <div class="form-group m-top-10">
                                         <button class="btn btn-default" type="submit">Submit <i class="fa fa-long-arrow-right"></i></button>
 {{--                                        <a href="{{route('order.store')}}" type="submit" class="btn btn-default">Submit <i class="fa fa-long-arrow-right"></i></a>--}}
                                     </div>
                                 </div>
-
                             </div>
-
                         </form>
                     </div>
 
