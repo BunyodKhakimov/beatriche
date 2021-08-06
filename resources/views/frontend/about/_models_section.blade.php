@@ -4,8 +4,8 @@
             <div class="main_teams">
                 <div class="col-md-12">
                     <div class="head_title text-left sm-text-center wow fadeInDown">
-                        <h2>Meet our team</h2>
-                        <h5><em>Behind the cussess of Pouseidon is not th one-man work but the work of many creative and smart people</em></h5>
+                        <h2>@lang('front.about_models_title')</h2>
+                        <h5><em>@lang('front.about_models_subtitle')</em></h5>
                         <div class="separator_left"></div>
                     </div>
                 </div>

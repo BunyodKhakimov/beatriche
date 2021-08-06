@@ -5,8 +5,8 @@
             <div class="main-gallery roomy-80">
                 <div class="col-md-12">
                     <div class="head_title text-left sm-text-center wow fadeInDown">
-                        <h2>Our Gallery</h2>
-                        <h5><em>Some our recent works is here. Discover them now!</em></h5>
+                        <h2>@lang('front.model_gallery_title')</h2>
+                        <h5><em>@lang('front.model_gallery_subtitle')</em></h5>
                         <div class="separator_left"></div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                                     <div class="grid_hover_text m-top-110">
                                         <h4 class="text-white">Sloggi’s collection</h4>
                                         <h5 class="text-white"><em>Fashionista</em></h5>
-                                        <a href="{{Storage::disk('s3')->temporaryUrl($user->image[0], '+2 minutes')}}" class="text-white m-top-40">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                        <a href="{{Storage::disk('s3')->temporaryUrl($user->image[0], '+2 minutes')}}" class="text-white m-top-40">@lang('front.view_project') <i class="fa fa-long-arrow-right"></i></a>
                                     </div>
                                 </div><!-- End off grid Hover area -->
                             </div><!-- End off grid item -->
@@ -44,7 +44,7 @@
                                 <div class="grid_hover_text m-top-110">
                                     <h4 class="text-white">Sloggi’s collection</h4>
                                     <h5 class="text-white"><em>Fashionista</em></h5>
-                                    <a href="{{asset('/images/porfolio-01.jpg')}}" class="text-white m-top-40">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{asset('/images/porfolio-01.jpg')}}" class="text-white m-top-40">@lang('front.view_project') <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div><!-- End off grid Hover area -->
                         </div><!-- End off grid item -->
@@ -55,7 +55,7 @@
                                 <div class="grid_hover_text m-top-150">
                                     <h4 class="text-white">Sloggi’s collection</h4>
                                     <h5 class="text-white"><em>Fashionista</em></h5>
-                                    <a href="{{asset('/images/porfolio-02.jpg')}}" class="text-white m-top-50">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{asset('/images/porfolio-02.jpg')}}" class="text-white m-top-50">@lang('front.view_project') <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div><!-- End off grid Hover area -->
                         </div><!-- End off grid item -->
@@ -66,7 +66,7 @@
                                 <div class="grid_hover_text m-top-50">
                                     <h4 class="text-white">Sloggi’s collection</h4>
                                     <h5 class="text-white"><em>Fashionista</em></h5>
-                                    <a href="{{asset('/images/porfolio-03.jpg')}}" class="text-white m-top-40">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{asset('/images/porfolio-03.jpg')}}" class="text-white m-top-40">@lang('front.view_project') <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div><!-- End off grid Hover area -->
                         </div><!-- End off grid item -->
@@ -77,7 +77,7 @@
                                 <div class="grid_hover_text m-top-50">
                                     <h4 class="text-white">Sloggi’s collection</h4>
                                     <h5 class="text-white"><em>Fashionista</em></h5>
-                                    <a href="{{asset('/images/porfolio-06.jpg')}}" class="text-white m-top-40">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{asset('/images/porfolio-06.jpg')}}" class="text-white m-top-40">@lang('front.view_project') <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div><!-- End off grid Hover area -->
                         </div><!-- End off grid item -->
@@ -88,7 +88,7 @@
                                 <div class="grid_hover_text m-top-150">
                                     <h4 class="text-white">Sloggi’s collection</h4>
                                     <h5 class="text-white"><em>Fashionista</em></h5>
-                                    <a href="{{asset('/images/porfolio-04.jpg')}}" class="text-white m-top-50">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{asset('/images/porfolio-04.jpg')}}" class="text-white m-top-50">@lang('front.view_project') <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div><!-- End off grid Hover area -->
                         </div><!-- End off grid item -->
@@ -100,7 +100,7 @@
                                 <div class="grid_hover_text m-top-110">
                                     <h4 class="text-white">Sloggi’s collection</h4>
                                     <h5 class="text-white"><em>Fashionista</em></h5>
-                                    <a href="{{asset('/images/porfolio-05.jpg')}}" class="text-white m-top-40">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{asset('/images/porfolio-05.jpg')}}" class="text-white m-top-40">@lang('front.view_project') <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div><!-- End off grid Hover area -->
                         </div><!-- End off grid item -->

@@ -5,8 +5,8 @@
             <div class="main-gallery roomy-80">
                 <div class="col-md-12 m-bottom-70">
                     <div class="head_title text-left sm-text-center wow fadeInDown">
-                        <h2>Recent Works</h2>
-                        <h5><em>Some our recent works is here. Discover them now!</em></h5>
+                        <h2>@lang('front.model_details_works_title')</h2>
+                        <h5><em>@lang('front.model_details_works_subtitle')</em></h5>
                         <div class="separator_left"></div>
                     </div>
                 </div>

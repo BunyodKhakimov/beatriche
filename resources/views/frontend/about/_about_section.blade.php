@@ -6,20 +6,15 @@
                 <div class="col-md-6">
                     <!-- Head Title -->
                     <div class="head_title">
-                        <h2>Story about us</h2>
-                        <h5><em>Pouseidon brings the waves to somewhere so far,
-                                with beautiful & elegant</em></h5>
+                        <h2>@lang('front.about_about_title')</h2>
+                        <h5><em>@lang('front.about_about_subtitle')</em></h5>
                         <div class="separator_left"></div>
                     </div><!-- End off Head Title -->
 
                     <div class="ab_feature_content wow fadeIn m-top-40">
-                        <p>Eusus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores
-                            legere me lius quod ii legunt saepius. Duis autem vel eum iriure dolor in hendrerit vulputate
-                            velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-                            accumsan et iusto odio dignissim qui blandit praesent luptatum</p>
+                        <p>@lang('front.about_about_first_paragraph')</p>
 
-                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                            vel illum dolore feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim</p>
+                        <p>@lang('front.about_about_second_paragraph')</p>
 
                     </div>
                 </div>

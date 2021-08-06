@@ -15,12 +15,28 @@
         <!-- Start Atribute Navigation -->
         <div class="attr-nav">
             <ul>
-                <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-{{--                <li class="dropdown">--}}
-{{--                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >--}}
-{{--                        <i class="fa fa-shopping-bag"></i>--}}
-{{--                        <span class="badge"></span>--}}
-{{--                    </a>--}}
+{{--                <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>--}}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+                        <span>{{Session::get('locale')}}</span>
+                        <i class="fa fa-globe"></i>
+                        <span class="badge"></span>
+                    </a>
+                    <ul class="dropdown-menu cart-list">
+                        <!---- Language List ---->
+                        <li class="total">
+                            <span class="pull-right">@lang('front.russian')</span>
+                            <a href="{{ route('switch-lang', 'ru') }}" class="btn btn-cart">@lang('front.select')</a>
+                        </li>
+                        <li class="total">
+                            <span class="pull-right">@lang('front.uzbek')</span>
+                            <a href="{{ route('switch-lang', 'uz') }}" class="btn btn-cart">@lang('front.select')</a>
+                        </li>
+                        <li class="total">
+                            <span class="pull-right">@lang('front.english')</span>
+                            <a href="{{ route('switch-lang', 'en') }}" class="btn btn-cart">@lang('front.select')</a>
+                        </li>
+                    </ul>
 {{--                    <ul class="dropdown-menu cart-list">--}}
 {{--                        <li>--}}
 {{--                            <a href="#" class="photo"><img src="{{asset('/images/thumb01.jpg')}}" class="cart-thumb" alt="" /></a>--}}
@@ -43,7 +59,7 @@
 {{--                            <a href="#" class="btn btn-cart">Cart</a>--}}
 {{--                        </li>--}}
 {{--                    </ul>--}}
-{{--                </li>--}}
+                </li>
 
             </ul>
         </div>
@@ -66,12 +82,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                <li><a href="{{route('home')}}">home</a></li>
-                <li><a href="{{route('about')}}">about</a></li>
-                <li><a href="{{route('models')}}">our models</a></li>
-                <li><a href="{{route('blog')}}">blog</a></li>
-{{--                <li><a href="{{route('service')}}">service</a></li>--}}
-                <li><a href="{{route('contact')}}">contact</a></li>
+                <li><a href="{{route('home')}}">@lang('front.home')</a></li>
+                <li><a href="{{route('about')}}">@lang('front.about')</a></li>
+                <li><a href="{{route('models')}}">@lang('front.models')</a></li>
+{{--                <li><a href="{{route('blog')}}">@lang('front.blog')</a></li>--}}
+{{--                <li><a href="{{route('service')}}">@lang('front.service')</a></li>--}}
+                <li><a href="{{route('contact')}}">@lang('front.contact')</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div>

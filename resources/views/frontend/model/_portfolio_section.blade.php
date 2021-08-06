@@ -5,8 +5,8 @@
             <div class="main-gallery main-model roomy-80">
                 <div class="col-md-12">
                     <div class="head_title text-left sm-text-center wow fadeInDown">
-                        <h2>Our Models</h2>
-                        <h5><em>The success of Pouseidon is passion and love. Meet them now!</em></h5>
+                        <h2>@lang('front.models')</h2>
+                        <h5><em>@lang('front.index_models_subtitle')</em></h5>
                         <div class="separator_left"></div>
                     </div>
                 </div>
@@ -29,7 +29,9 @@
                             {{--                                        {{dd($user)}}--}}
                             <div class="grid-item model-item transition metal ium alkali ar">
                                 <img alt="" src="@if(isset($user->profile_image)){{Storage::disk('s3')->temporaryUrl($user->profile_image, '+2 minutes')}}@else{{asset('/images/model/default.jpg')}}@endif">
-                                <a href="{{route('model-details', $user->id)}}" class="btn btn-default m-top-20">View {{$user->name}} <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="{{route('model-details', $user->id)}}" class="btn btn-default m-top-20">
+                                    {{$user->name}} <i class="fa fa-long-arrow-right"></i>
+                                </a>
                             </div><!-- End off grid item -->
                         @endforeach
                     @endif

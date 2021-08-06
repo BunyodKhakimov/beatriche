@@ -4,8 +4,8 @@
             <div class="main_models text-center">
                 <div class="col-md-12">
                     <div class="head_title text-left sm-text-center wow fadeInDown">
-                        <h2>Our Models</h2>
-                        <h5><em>The success of Beatriche is passion and love. Meet them now!</em></h5>
+                        <h2>@lang('front.models')</h2>
+                        <h5><em>@lang('front.index_models_subtitle')</em></h5>
                         <div class="separator_left"></div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
 
                 <div class="col-md-3 col-sm-6">
                     <div class="model_item meet_team m-top-30">
-                        <a href="{{route('models')}}">Meet All Them <i class="fa fa-long-arrow-right"></i></a>
+                        <a href="{{route('models')}}">@lang('front.index_models_meet') <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div><!-- End off col-md-3 -->
 

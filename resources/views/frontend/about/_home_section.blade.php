@@ -4,10 +4,10 @@
         <div class="row">
             <div class="main_home text-center">
                 <div class="about_text">
-                    <h1 class="text-white text-uppercase">About Us</h1>
+                    <h1 class="text-white text-uppercase">@lang('front.about')</h1>
                     <ol class="breadcrumb">
-                        <li><a href="{{route('home')}}">Home</a></li>
-                        <li class="active"><a href="{{route('about')}}">About Us</a></li>
+                        <li><a href="{{route('home')}}">@lang('front.home')</a></li>
+                        <li class="active"><a href="{{route('about')}}">@lang('front.about')</a></li>
                     </ol>
                 </div>
             </div>

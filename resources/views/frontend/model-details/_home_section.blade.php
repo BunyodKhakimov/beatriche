@@ -4,10 +4,10 @@
         <div class="row">
             <div class="main_home text-center">
                 <div class="model_text">
-                    <h1 class="text-white text-uppercase"> Our Model</h1>
+                    <h1 class="text-white text-uppercase">@lang('front.models')</h1>
                     <ol class="breadcrumb text-uppercase">
-                        <li><a href="#">Home</a></li>
-                        <li class="active"><a href="{{route('home')}}">Our Model</a></li>
+                        <li><a href="#">@lang('front.home')</a></li>
+                        <li class="active"><a href="{{route('home')}}">@lang('front.models')</a></li>
                         <li class="active">
                             <a href="#">
                                 @if(isset($user)){{$user->name}}@endif

@@ -82,4 +82,9 @@ class FrontPagesController extends Controller
 
         return redirect()->back();
     }
+
+    public function switchLanguage($lang){
+        session()->put('locale', $lang);
+        return redirect()->back();
+    }
 }
